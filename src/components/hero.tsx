@@ -57,7 +57,9 @@ export function Hero() {
         </p>
         <div className="flex flex-col md:flex-row gap-2.5 md:gap-3 pt-1 md:pt-2">
           <a
-            href={`mailto:${siteConfig.email}`}
+            href={siteConfig.calUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex md:inline-flex justify-center items-center min-h-12 md:min-h-0 bg-orange-700 hover:bg-orange-800 text-white px-6 py-3.5 rounded-lg text-[15px] font-medium transition-colors"
           >
             Book a free 30-min call

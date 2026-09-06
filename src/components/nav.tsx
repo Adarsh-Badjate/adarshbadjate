@@ -32,7 +32,7 @@ export function Nav() {
       <div className="max-w-[1440px] mx-auto px-[clamp(24px,5vw,80px)] flex justify-between items-center h-[52px] md:h-[72px] border-b border-stone-200">
         <a
           href="#top"
-          className="font-semibold text-[15px] text-stone-900 tracking-tight"
+          className="font-semibold text-lg md:text-xl text-stone-900 tracking-tight"
         >
           {siteConfig.name}
         </a>

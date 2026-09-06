@@ -9,6 +9,7 @@ export const siteConfig = {
   intro:
     "Hi, I'm Adarsh. I help startups and small teams turn scattered data into reliable pipelines, dashboards and LLM-powered workflows \u2014 without hiring a full data team. Day job: GTM Engineer at Fello; before that, healthcare data engineering at 99.8% reliability.",
   felloUrl: "https://fello.ai",
+  calUrl: "https://cal.com/adarsh-badjate-gxajgo/30min?overlayCalendar=true",
   ctaHeading: "Have a data project in mind?",
   ctaBody:
     "Tell me what's broken or missing. I'll reply within a day with an honest take on scope, timeline and whether I'm the right person for it.",
