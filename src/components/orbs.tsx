@@ -2,21 +2,32 @@
 
 export function HeroOrb() {
   return (
-    <div className="relative w-[200px] h-[200px]">
+    <div className="relative w-[120px] h-[120px] md:w-[200px] md:h-[200px]">
       {/* Main sphere */}
       <div
         className="absolute inset-0 rounded-full"
         style={{
           background:
             "radial-gradient(circle at 32% 28%, #fdba74 0%, #ea580c 38%, #c2410c 62%, #7c2d12 100%)",
-          boxShadow:
-            "0 30px 60px rgba(194,65,12,.28), inset -20px -20px 40px rgba(0,0,0,.25)",
           animation: "orbDrift 9s ease-in-out infinite",
         }}
-      />
+      >
+        <style>{`
+          @media (max-width: 767px) {
+            .hero-orb-sphere { box-shadow: 0 20px 40px rgba(194,65,12,.28), inset -12px -12px 24px rgba(0,0,0,.25) !important; }
+          }
+        `}</style>
+        <div
+          className="hero-orb-sphere absolute inset-0 rounded-full"
+          style={{
+            boxShadow:
+              "0 30px 60px rgba(194,65,12,.28), inset -20px -20px 40px rgba(0,0,0,.25)",
+          }}
+        />
+      </div>
       {/* Spinning ring */}
       <div
-        className="absolute -inset-[18px] rounded-full"
+        className="absolute -inset-3 md:-inset-[18px] rounded-full"
         style={{
           border: "1px solid rgba(194,65,12,.18)",
           borderTopColor: "rgba(194,65,12,.6)",
@@ -25,7 +36,7 @@ export function HeroOrb() {
       />
       {/* Highlight */}
       <div
-        className="absolute inset-[22px] rounded-full"
+        className="absolute inset-3.5 md:inset-[22px] rounded-full"
         style={{
           background:
             "radial-gradient(circle at 40% 35%, rgba(255,255,255,.55), rgba(255,255,255,0) 55%)",

@@ -14,15 +14,15 @@ export function Stats() {
       {stats.map((s, i) => (
         <div
           key={s.label}
-          className={`py-6 flex flex-col gap-1.5 transition-all duration-500 ${
+          className={`py-4 md:py-6 flex flex-col gap-1 md:gap-1.5 transition-all duration-500 ${
             inView
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-4"
           }`}
           style={{ transitionDelay: `${i * 100}ms` }}
         >
-          <div className="text-3xl font-semibold tracking-tight">{s.value}</div>
-          <div className="text-[13px] text-stone-500">{s.label}</div>
+          <div className="text-2xl md:text-3xl font-semibold tracking-tight">{s.value}</div>
+          <div className="text-xs md:text-[13px] text-stone-500 leading-snug">{s.label}</div>
         </div>
       ))}
     </section>
